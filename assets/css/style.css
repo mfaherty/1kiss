@@ -1,88 +1,87 @@
-/* Space out content a bit */
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+html, body {
+  height: 100%;
+  width: 100%;
+}
+.navbar {
+  background-color: #566573;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 1.2em;
+  
+}
+.navbar-brand {
+  min-height: 56px;
+  padding: 0 15px 5px;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-right: 15px;
-  padding-left: 15px;
+.navbar-default .navbar-nav li a {
+  color: #d5d5d5;
 }
 
-/* Custom page header */
-.header {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e5e5e5;
+.navbar-default .navbar-nav li a:hover .navbar-default .navbar-nav li a .active{
+  color: #FFFF;
 }
 
-/* Make H1 heading stand out */
-.header h2 {
- color:#FFFFFF;
+
+
+#home {
+  background-image: url(/assets/images/monkees.jpg), no-repeat, center, fixed; 
+  display: table;
+  height: 100%;
+  position: relative;
+  background-size: cover;
+  width:100%;  
+  
+
 }
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
+
+.landing-text{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
   
 }
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+.landing-text h1{
+  font-size: 500;
+  font-weight: 700;
+  
 }
 
-/* Customize container */
-@media (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
+.padding{
+  padding: 80px 0;
 }
-.container-narrow > hr {
-  margin: 30px 0;
+.padding img{
+  width: 100%;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-.jumbotron .btn {
-  padding: 14px 24px;
-  font-size: 21px;
+
+footer{
+  width: 100%;
+  background-color: #23415c;
+  padding: 5% 5% 10% 5%;
+  color: #FFFF;
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
+.fa{
+  padding: 15px;
+  font-size: 25px;
+  color: #FFFF;
 }
-.marketing p + h4 {
-  margin-top: 28px;
+.fa.hover{
+  color: #D5D5D5;
+  text-decoration: none;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-right: 0;
-    padding-left: 0;
+@media (max-width: 768px){
+  .landing-text h1 {
+    font-size: 300%;
   }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
+  .fa {
+    font-size: 20px;
+    padding: 10px;
   }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    background-image: url("../images/monkees.jpg");
-    border-bottom: 0;
-    background-repeat: no-repeat;
-    background-position: center; 
-  }
+  
 }
