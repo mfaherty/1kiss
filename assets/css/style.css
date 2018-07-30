@@ -17,11 +17,17 @@ body {
   padding-bottom: 20px;
   border-bottom: 1px solid #e5e5e5;
 }
+
+/* Make H1 heading stand out */
+.header h2 {
+ color:#FFFFFF;
+}
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 40px;
+  
 }
 
 /* Custom page footer */
@@ -76,5 +82,7 @@ body {
   .jumbotron {
     background-image: url("../images/monkees.jpg");
     border-bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center; 
   }
 }
