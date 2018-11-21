@@ -58,12 +58,16 @@ html, body {
 }
 
 
-footer{
+footer {
+  position: absolute;
+  bottom:0;
+  height:60px;   /* Height of the footer */
   width: 100%;
   padding: 5% 5% 10% 5%;
   color: #FFFF;
   background-color: #4C4646;
-}
+ 
+  }
 
 .fa{
   padding: 15px;
